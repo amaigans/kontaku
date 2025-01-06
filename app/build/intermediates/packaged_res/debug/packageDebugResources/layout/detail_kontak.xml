@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- CardView untuk Detail Kontak -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewContactDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <!-- Foto Kontak (ImageView) -->
+            <ImageView
+                android:id="@+id/imageViewContact"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/profil"
+                android:contentDescription="Kontak Foto"
+                android:layout_marginBottom="16dp"
+                android:scaleType="centerCrop"/>
+
+            <!-- Nama Kontak (EditText) -->
+            <EditText
+                android:id="@+id/editTextNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp" />
+
+            <!-- Email Kontak (EditText) -->
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp"
+                />
+
+            <!-- Alamat Kontak (EditText) -->
+            <EditText
+                android:id="@+id/editTextAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alamat"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp" />
+
+            <!-- Jenis Kelamin Kontak (EditText) -->
+            <EditText
+                android:id="@+id/editTextJenisKelamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jenis Kelamin"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp"
+                />
+
+            <!-- Nomor Telepon Kontak (EditText) -->
+            <EditText
+                android:id="@+id/editTextNomorTelepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nomor Telepon"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp"
+                />
+
+            <!-- Tombol Simpan Kontak -->
+            <Button
+                android:id="@+id/buttonSimpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan Kontak"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+
+            <!-- Tombol Hapus Kontak -->
+            <Button
+                android:id="@+id/buttonHapus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hapus Kontak"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

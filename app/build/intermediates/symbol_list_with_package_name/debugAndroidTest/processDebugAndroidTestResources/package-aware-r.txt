@@ -1,0 +1,3 @@
+com.andi.kontaku.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme
